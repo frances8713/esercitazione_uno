@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esercitazione uno</title>
+    <style>
+        
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 5fr 2fr;
+            grid-template-rows: 300px 500px 500px;
+        
+        }
+
+        .uno {
+            background-color: gainsboro;    
+    
+        }
+
+        .due {
+            background-color: gray;
+        }
+        
+        button {
+            background-color: gainsboro;
+            color: black;
+
+        }
+
+        .cerchio {
+            display: grid;
+            grid-column: 1;
+            grid-row: 3;
+            width: 20px;
+            height: 20px;
+            border-radius: 20px;
+            background-color: white;
+            justify-items: end;
+        }
+
+        .search {
+            border-bottom-left-radius: 20px;
+        }
+
+        .rettangolo {
+            width: 200px;
+            height: 50px;
+            background-color: gainsboro;   
+        }
+
+    </style>
+</head>
+<body class="container">
+       <aside class="uno">
+           <button class="mr">MR</button>
+           <div class="cerchio"> </div>
+       </aside>
+       <main>
+           <div>
+               <form class="search">
+               <label for="cerca"></label>
+               <input type="cerca" name="cerca" placeholder="cerca...">
+            </form>
+           </div>
+           <hr>
+        </main>
+       <aside class="due">
+          <div class="rettangolo">
+            
+          </div>
+
+       </aside>
+        
+</body>
+</html>
